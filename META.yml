@@ -1,6 +1,6 @@
 ---
 name: JQuery
-version: 1.00
+version: 1.01
 author:
   - 'Peter Gordon <peter@pg-consultants.com>'
 abstract: 'A javascript interface, based on jQuery, giving simple access to Ajax and other feature from CGI'
@@ -29,6 +29,9 @@ provides:
   JQuery::ClickMenu:
     file: lib/JQuery/ClickMenu.pm
     version: 1.00
+  JQuery::Demo:
+    file: lib/JQuery/Demo.pm
+    version: 1.01
   JQuery::Form:
     file: lib/JQuery/Form.pm
     version: 1.00
@@ -44,8 +47,6 @@ provides:
   JQuery::Treeview:
     file: lib/JQuery/Treeview.pm
     version: 1.00
-  Tester:
-    file: lib/JQuery/Demo.pm
 generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

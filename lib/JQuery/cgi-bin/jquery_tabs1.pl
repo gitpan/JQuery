@@ -6,10 +6,10 @@ use JQuery::CSS ;
 use CGI ; 
 
 package main ;
-my $tester =  new Tester ; 
+my $tester =  new JQuery::Demo ;  
 $tester->run ; 
 
-package Tester ;
+package JQuery::Demo ;
 use JQuery::Tabs ; 
 
 sub start {

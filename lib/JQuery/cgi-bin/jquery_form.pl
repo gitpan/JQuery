@@ -7,10 +7,10 @@ use JQuery::Demo ;
 use CGI ; 
 
 package main ;
-my $tester =  new Tester ; 
+my $tester =  new JQuery::Demo ; 
 $tester->run ; 
 
-package Tester ;
+package JQuery::Demo ;
 use JQuery::Taconite ; 
 use JQuery::Form ; 
 

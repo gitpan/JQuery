@@ -5,10 +5,10 @@ use warnings ;
 use JQuery::Demo ;
 
 package main ;
-my $tester =  new Tester ; 
+my $tester =  new JQuery::Demo ; 
 $tester->run ; 
 
-package Tester ;
+package JQuery::Demo ;
 use JQuery::Splitter ; 
 use JQuery::CSS ; 
 

@@ -84,10 +84,13 @@ under the same terms as Perl itself.
 
 =cut
 
+package JQuery::Demo ; 
+
+our $VERSION = '1.01';
+
 use strict ; 
 use warnings ; 
 
-package Tester ; 
 use CGI::Carp qw(fatalsToBrowser);
 use base qw(CGI::Application);
 use JQuery ; 
