@@ -19,6 +19,7 @@ sub new {
 	push @{$my->{css}},$my->{param}{css} ; 
     } 
 
+    $my->{param}{debug} = 0 unless defined $my->{param}{debug} ; 
     $my->add_to_jquery ; 
     return $my ;
 }
@@ -54,11 +55,12 @@ sub get_jquery_code {
     }
     
     my $function =<<'EOD';
+DEBUG
 $('#ID').click(function() { 
     $.post("PROGRAM_TO_RUN", { RUNMODE ts: new Date().getTime()} ); 
     });
 EOD
-
+    $function =~ s/DEBUG/$.taconite.debug = true;/ if $my->{param}{debug} ;
     $function =~ s/ID/$id/ ; 
     $function =~ s/PROGRAM_TO_RUN/$remoteProgram/ ; 
     $function =~ s/RUNMODE/$runMode/ ; 
@@ -101,6 +103,10 @@ If used without a form:
 =item new
 
 Instantiate the object
+
+=item debug 
+
+Set to 1 to enable debugging. You can see the results in Firebug.
 
 =back
 

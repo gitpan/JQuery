@@ -174,7 +174,7 @@ sub produce {
 
     if ($nodeType eq 'leaf') { 
 	$writer->startTag("li");
-	$writer->emptyTag('img',src=>"$my->{fileDir}/treeview/images/file.gif") if $type eq 'directory' ; 
+	$writer->emptyTag('img',src=>"$my->{fileDir}/treeview/images/file.gif", alt=>"file") if $type eq 'directory' ; 
 	my $underline = '' ;
 	
 	$underline = "text-decoration: underline" if $my->highlightUnderline ; 
@@ -193,7 +193,7 @@ sub produce {
 	} else { 
 	    $writer->startTag("li", class=> $state);
 	} 
-	$writer->emptyTag('img',src=>"$my->{fileDir}/treeview/images/folder.gif") if $type eq 'directory' ; 
+	$writer->emptyTag('img',src=>"$my->{fileDir}/treeview/images/folder.gif",alt=>"folder") if $type eq 'directory' ; 
 	my $underline = '' ;
 	$underline = "text-decoration: underline" if $my->highlightUnderline ; 
 

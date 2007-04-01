@@ -78,12 +78,11 @@ sub get_css {
 		if (ref($c) =~ /\S/) { 
 		    $style .= $c->output_text($id) . "\n" ; 
 		} else {
-		    $style .= qq[<style type="text/css">\n] .  $c . "</style>\n" ; 
-		    
+		    $style .= qq[<style type="text/css">\n] .  $c . "</style>\n" if $c =~ /\S/ ; # HTML Validator doesn't like empty styles
 		}
 	    }
 	} else { 
-	    $style .= qq[<style type="text/css">\n] .  $css . "</style>\n" ; 
+	    $style .= qq[<style type="text/css">\n] .  $css . "</style>\n" if $css =~ /\S/;   # HTML Validator doesn't like empty styles
 	} 
     } 
     for my $css (@{$my->{csslast}}) { 

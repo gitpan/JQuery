@@ -1,6 +1,6 @@
 ---
 name: JQuery
-version: 1.01
+version: 1.02
 author:
   - 'Peter Gordon <peter@pg-consultants.com>'
 abstract: 'A javascript interface, based on jQuery, giving simple access to Ajax and other feature from CGI'
@@ -10,6 +10,7 @@ resources:
 requires:
   CGI::Application: 1.0
   CGI::Carp: 1.0
+  CGI::Util: 1.0
   CSS: 1.0
   HTML::Table: 1.0
   IO::String: 1.0
@@ -37,6 +38,9 @@ provides:
     version: 1.00
   JQuery::Splitter:
     file: lib/JQuery/Splitter.pm
+    version: 1.00
+  JQuery::TableSorter:
+    file: lib/JQuery/TableSorter.pm
     version: 1.00
   JQuery::Tabs:
     file: lib/JQuery/Tabs.pm

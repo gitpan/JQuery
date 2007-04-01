@@ -4,6 +4,7 @@ our $VERSION = '1.00';
 
 use warnings;
 use strict;
+use CGI::Util ; 
 
 sub new { 
     my $this = shift;
@@ -94,7 +95,8 @@ sub HTML {
     for my $h (@tabs) { 
 	$n ++ ;
 	my $href = qq[<a href="#$id-fragment-$n">] ; 
-	$href = qq[<a href="$my->{param}{remoteProgram}?rm=$my->{param}{rm}&tab=$h">] if $my->{param}{remote} ; 
+	my $tabLabel = CGI::Util::escape($h) ; 
+	$href = qq[<a href="$my->{param}{remoteProgram}?rm=$my->{param}{rm}&amp;tab=$tabLabel">] if $my->{param}{remote} ; 
 	$html .= qq[<li>$href] . $h . qq[</a></li>\n] ; 
     }
     $html .= "</ul>\n" ;

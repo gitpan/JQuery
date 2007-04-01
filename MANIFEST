@@ -3,6 +3,7 @@ Changes
 MANIFEST
 META.yml # Will be created by "make dist"
 README
+FAQ
 # Examples
 lib/JQuery/cgi-bin/jquery_clickmenu.pl
 lib/JQuery/cgi-bin/jquery_form.pl
@@ -11,6 +12,8 @@ lib/JQuery/cgi-bin/jquery_splitter2.pl
 lib/JQuery/cgi-bin/jquery_splitter3.pl
 lib/JQuery/cgi-bin/jquery_tabs1.pl
 lib/JQuery/cgi-bin/jquery_tabs2.pl
+lib/JQuery/cgi-bin/jquery_tablesorter1.pl
+lib/JQuery/cgi-bin/jquery_tablesorter2.pl
 lib/JQuery/cgi-bin/jquery_tabs_results.pl
 lib/JQuery/cgi-bin/jquery_taconite1.pl
 lib/JQuery/cgi-bin/jquery_taconite_results1.pl
@@ -27,6 +30,7 @@ lib/JQuery/Demo.pm
 lib/JQuery/Form.pm
 lib/JQuery/Splitter.pm
 lib/JQuery/Tabs.pm
+lib/JQuery/TableSorter.pm
 lib/JQuery/Taconite.pm
 lib/JQuery/Treeview.pm
 
@@ -38,6 +42,13 @@ lib/JQuery/jquery_js/plugins/interface/interface.js # This is the compressed fil
 lib/JQuery/jquery_js/plugins/splitter/splitter.js
 lib/JQuery/jquery_js/plugins/splitter/README
 
+lib/JQuery/jquery_js/plugins/tablesorter/default_table.css
+lib/JQuery/jquery_js/plugins/tablesorter/green_arrows.gif
+lib/JQuery/jquery_js/plugins/tablesorter/green_ascending.gif
+lib/JQuery/jquery_js/plugins/tablesorter/green_descending.gif
+lib/JQuery/jquery_js/plugins/tablesorter/header-asc.png
+lib/JQuery/jquery_js/plugins/tablesorter/header-bg.png
+lib/JQuery/jquery_js/plugins/tablesorter/header-desc.png
 
 #The normal jQuery cvs distribution
 lib/JQuery/jquery_js/jquery/jquery-latest.js
