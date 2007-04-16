@@ -125,7 +125,8 @@ sub produce {
 
     if ($nodeType eq 'separator') {
 	$writer->startTag("li", class => 'sep');
-	$writer->characters("sep") ; # Just to stop HTML errors  
+	$writer->startTag("div");
+	$writer->endTag ; # Just to stop HTML errors  
 	$writer->endTag('li') ; 
     } 
     if ($nodeType eq 'leaf') { 

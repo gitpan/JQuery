@@ -15,6 +15,7 @@ sub new {
     my $class = ref($this) || $this;
     my $my = {@_} ;
     $my->{usePacked} = 0 unless defined $my->{usePacked} ;
+    $my->{useDump}  = 0 unless defined $my->{useDump} ;
     $my->{css} = [] ;
     $my->{csslast} = [] ;
     $my->{objectList} = [] ; 
@@ -99,6 +100,10 @@ sub get_jquery_code {
     my $jqueryDir = $my->{jqueryDir} ;
     my $pack = $my->{usePacked} ? ".pack" : "" ; 
     my $code = qq[<script type="text/javascript" src="$jqueryDir/jquery/jquery-latest${pack}.js"></script>] ."\n" ; 
+    if ($my->{useDump}) { 
+	push @packages,"dumper/jquery.dump.js" ; 
+    }
+
     for my $package (@packages) { 
 	$code .= qq[<script type="text/javascript" src="$jqueryDir/plugins/$package"></script>] . "\n" ; 
     } 
@@ -411,6 +416,10 @@ Examples of split windows with a bar for resizing
 =item jquery_treeview.pl
 
 Show an expandable tree. You can choose grid lines or folder icons. 
+
+=item jquery_heartbeat.pl
+
+Show how to update a page every second.
 
 =back
 

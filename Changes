@@ -7,3 +7,5 @@ Revision history for JQuery
         Remove empty styles (HTML Validation)
         There was a problem with installation - TableSorter was checked but non-existant.
         Added TableSorter.
+1.03    Fixed separator on menus
+1.04    Left a DEBUG message in Taconite which stopped it from working

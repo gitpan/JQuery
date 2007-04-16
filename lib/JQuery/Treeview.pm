@@ -1,6 +1,6 @@
 package JQuery::Treeview ; 
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 use strict ;
 use warnings ; 
@@ -64,7 +64,7 @@ sub highlightUnderline {
 
 sub packages_needed { 
     my $my = shift ;
-    return ('taconite/jquery.taconite.js','treeview/jquery.treeview.js') ; 
+    return ('taconite/jquery.taconite.js','interface/interface.js','treeview/jquery.treeview.js','cookie/jquery.cookie.js') ; 
 } 
 
 sub HTMLControl {
@@ -307,7 +307,9 @@ EOD
     $rm = '' unless $my->{param}{rm} =~ /\S/ ; 
     $function2 =~ s/RM/$rm/ ;
     $function2 = '' unless $remoteProgram =~ /\S/ ; 
-    return $function1 . $function2 . $function3 ; 
+    my $function4 = $my->dragAndDrop ;
+    
+    return $function1 . $function2 . $function3 . $function4 ; 
 }
 1;
 =head1 NAME
