@@ -9,3 +9,5 @@ Revision history for JQuery
         Added TableSorter.
 1.03    Fixed separator on menus
 1.04    Left a DEBUG message in Taconite which stopped it from working
+1.05    Changed jquery_heartbeat.js so that it uses a counter to ensure that IE does not cache
+        Add Module::Build dependency

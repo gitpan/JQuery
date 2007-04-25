@@ -90,7 +90,8 @@ JHeartbeat installs the heartbeat javascript and calls the specified url on each
 
     $jquery = new JQuery(...) ; 
     JQuery::Heartbeat->new(addToJQuery => $jquery, remoteProgram => 'jquery_heartbeat_results.pl', rm => 'heartbeatRunMode', delay => 1000) ; 
-
+    
+    To force the various browsers into non-cache mode, a variable, counter, is automatically added to the end of the url. 
 
 =head1 FUNCTIONS
 

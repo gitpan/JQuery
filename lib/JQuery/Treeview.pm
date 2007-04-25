@@ -314,7 +314,7 @@ EOD
 1;
 =head1 NAME
 
-JQuery::Taconite - an Ajax interface
+JQuery::Treeview -  shows a information as a tree. 
 
 =head1 VERSION
 
