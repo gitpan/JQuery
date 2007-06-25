@@ -36,6 +36,16 @@ lib/JQuery/TableSorter.pm
 lib/JQuery/Taconite.pm
 lib/JQuery/Treeview.pm
 
+lib/JQuery/jquery_js/plugins/clickmenu/arrow_right.gif
+lib/JQuery/jquery_js/plugins/clickmenu/arrow_right_plain.png
+lib/JQuery/jquery_js/plugins/clickmenu/clickmenu.css
+lib/JQuery/jquery_js/plugins/clickmenu/jquery.clickmenu.js
+lib/JQuery/jquery_js/plugins/clickmenu/jquery.clickmenu.pack.js
+lib/JQuery/jquery_js/plugins/clickmenu/myshadow.png
+
+
+
+
 # Not in the normal distribution
 
 lib/JQuery/jquery_js/plugins/dumper/jquery.dump.js
@@ -44,8 +54,25 @@ lib/JQuery/jquery_js/plugins/taconite/jquery.taconite.js
 lib/JQuery/jquery_js/plugins/taconite/README
 lib/JQuery/jquery_js/plugins/interface/interface.js # This is the compressed file downloaded from http://interface.eyecon.ro/interface/interface_1.2.zip
 
+lib/JQuery/jquery_js/plugins/splitter/hgrabber.gif
+lib/JQuery/jquery_js/plugins/splitter/vgrabber.gif
 lib/JQuery/jquery_js/plugins/splitter/splitter.js
 lib/JQuery/jquery_js/plugins/splitter/README
+
+lib/JQuery/jquery_js/plugins/tabs/META.json
+lib/JQuery/jquery_js/plugins/tabs/ahah_1.html
+lib/JQuery/jquery_js/plugins/tabs/ahah_2.html
+lib/JQuery/jquery_js/plugins/tabs/ahah_3.html
+lib/JQuery/jquery_js/plugins/tabs/index.html
+lib/JQuery/jquery_js/plugins/tabs/jquery.history_remote.pack.js
+lib/JQuery/jquery_js/plugins/tabs/jquery.tabs.js
+lib/JQuery/jquery_js/plugins/tabs/jquery.tabs.pack.js
+lib/JQuery/jquery_js/plugins/tabs/loading.gif
+lib/JQuery/jquery_js/plugins/tabs/loading_micro.gif
+lib/JQuery/jquery_js/plugins/tabs/tab.png
+lib/JQuery/jquery_js/plugins/tabs/tabs.css
+lib/JQuery/jquery_js/plugins/tabs/tabs_ie.css
+lib/JQuery/jquery_js/plugins/tabs/tabs_js.css
 
 lib/JQuery/jquery_js/plugins/tablesorter/default_table.css
 lib/JQuery/jquery_js/plugins/tablesorter/green_arrows.gif

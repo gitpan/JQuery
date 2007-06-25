@@ -11,3 +11,4 @@ Revision history for JQuery
 1.04    Left a DEBUG message in Taconite which stopped it from working
 1.05    Changed jquery_heartbeat.js so that it uses a counter to ensure that IE does not cache
         Add Module::Build dependency
+1.06    Added some missing files

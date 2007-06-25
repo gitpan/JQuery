@@ -34,7 +34,7 @@ my $builder = $class->new(
     dist_author         => 'Peter Gordon <peter@pg-consultants.com>',
     dist_abstract	=> 'A javascript interface, based on jQuery, giving simple access to Ajax and other feature from CGI',
     dist_version_from   => 'lib/JQuery.pm',
-    dist_version        => '1.05',
+    dist_version        => '1.06',
     build_requires => {
         'Test::More' => 0,
     },

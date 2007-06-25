@@ -1,12 +1,10 @@
 ---
 name: JQuery
-version: 1.05
+version: 1.06
 author:
   - 'Peter Gordon <peter@pg-consultants.com>'
-abstract: 'A javascript interface, based on jQuery, giving simple access to Ajax and other feature from CGI'
+abstract: A javascript interface, based on jQuery, giving simple access to Ajax and other feature from CGI
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
 requires:
   CGI::Application: 1.0
   CGI::Carp: 1.0
@@ -18,6 +16,10 @@ requires:
   XML::Writer: 0.6
 build_requires:
   Test::More: 0
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
 provides:
   JQuery:
     file: lib/JQuery.pm
@@ -55,7 +57,5 @@ provides:
   JQuery::Treeview:
     file: lib/JQuery/Treeview.pm
     version: 1.01
-generated_by: Module::Build version 0.2805
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+resources:
+  license: http://dev.perl.org/licenses/
